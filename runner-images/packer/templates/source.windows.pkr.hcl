@@ -24,7 +24,7 @@ source "azure-arm" "windows" {
   os_type         = "Windows"
   image_publisher = "MicrosoftWindowsServer"
   image_offer     = "WindowsServer"
-  image_sku       = "2022-datacenter-g2"
+  image_sku       = "2025-datacenter-g2"
 
   managed_image_name                = var.managed_image_name
   managed_image_resource_group_name = var.managed_image_resource_group_name

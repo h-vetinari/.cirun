@@ -2,9 +2,9 @@
 
 Packer templates for building CI runner images on Azure, using the Azure account sponsored by [prefix.dev](https://prefix.dev) (tenant: `1663b411-...`, subscription: `df033e15-...`).
 
-## Windows Server 2022
+## Windows Server 2025
 
-Builds a Windows Server 2022 image with:
+Builds a Windows Server 2025 image with:
 - Chocolatey
 - Git
 - bash
@@ -59,7 +59,7 @@ packer init runner-images/packer/templates/
 packer build \
   -var "use_azure_cli_auth=true" \
   -var "managed_image_resource_group_name=<resource-group>" \
-  -var "managed_image_name=cirun-win22-$(date +%Y%m%d)" \
+  -var "managed_image_name=cirun-win25-$(date +%Y%m%d)" \
   -var "location=UK South" \
   runner-images/packer/templates/
 ```

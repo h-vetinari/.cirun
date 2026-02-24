@@ -25,7 +25,7 @@ variable "location" {
 
 variable "managed_image_name" {
   type    = string
-  default = "cirun-win22-{{timestamp}}"
+  default = "cirun-win25-{{timestamp}}"
 }
 
 variable "managed_image_resource_group_name" {
@@ -44,7 +44,7 @@ variable "vm_size" {
 
 variable "image_os" {
   type    = string
-  default = "win22"
+  default = "win25"
 }
 
 variable "use_azure_cli_auth" {
